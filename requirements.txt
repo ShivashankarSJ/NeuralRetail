@@ -5,13 +5,6 @@ seaborn
 scikit-learn
 xgboost
 lightgbm
-prophetpandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-xgboost
-lightgbm
 prophet
 streamlit
 plotly
@@ -19,23 +12,6 @@ openpyxl
 polars
 pytorch-lightning
 pytorch-forecasting
-shap
-lime
-dowhy
-econml
-mlflow
-evidently
-fastapi
-uvicorn
-pydantic
-redis
-streamlit
-plotly
-openpyxl
-# Additional libraries from the PDF tech stack
-polars
-pytorch-lightning
-torchforecast
 shap
 lime
 dowhy
