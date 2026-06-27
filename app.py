@@ -15,9 +15,7 @@ from forecasting import prepare_time_series, train_prophet, make_forecast
 from churn import prepare_churn_data, train_churn_model
 from inventory import abc_analysis, calculate_eoq
 
-# -------------------------------------------------
 # PAGE CONFIGURATION
-# -------------------------------------------------
 st.set_page_config(page_title="NeuralRetail - Amdox AI Sales Intelligence", layout="wide")
 
 # Custom CSS for Amdox Branding
@@ -40,9 +38,8 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# -------------------------------------------------
+
 # DATA LOADING (CACHED)
-# -------------------------------------------------
 @st.cache_data
 def get_data():
     path = "data/online_retail_ii/online_retail_II.xlsx"
@@ -50,10 +47,9 @@ def get_data():
     df_clean = preprocess_data(df)
     return df_clean
 
-# -------------------------------------------------
+
 # APP LAYOUT
-# -------------------------------------------------
-st.sidebar.image("https://media.licdn.com/dms/image/v2/D560BAQHkxNcin7pyug/company-logo_200_200/B56ZYEaCS_HEAM-/0/1743830657663/amdox_tech_logo?e=1780531200&v=beta&t=unY8UVPBaupc6xVV47ahFNSbd3kNoC6pO_VXqw2vglM", width=200) # Placeholder for Amdox logo
+st.sidebar.image("https://media.licdn.com/dms/image/v2/D560BAQHkxNcin7pyug/company-logo_200_200/B56ZYEaCS_HEAM-/0/1743830657663/amdox_tech_logo?e=1784160000&v=beta&t=XWs3TlYo408hlbg6KFp4WZkyfvHX_BTE70iRe-YWzrk", width=200) # Placeholder for Amdox logo
 st.sidebar.title("NeuralRetail")
 st.sidebar.markdown("*AI-Powered Sales Intelligence*")
 
