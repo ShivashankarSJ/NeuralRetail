@@ -64,9 +64,7 @@ except Exception as e:
     st.error(f"Error loading data: {e}")
     st.stop()
 
-# -------------------------------------------------
 # EXECUTIVE OVERVIEW
-# -------------------------------------------------
 if page == "Executive Overview":
     st.title("🚀 Executive Overview")
     
@@ -87,9 +85,7 @@ if page == "Executive Overview":
     fig = px.bar(country_rev, x=country_rev.index, y='TotalPrice', color_discrete_sequence=['#E84E1B'])
     st.plotly_chart(fig, use_container_width=True)
 
-# -------------------------------------------------
 # SALES ANALYTICS
-# -------------------------------------------------
 elif page == "Sales Analytics":
     st.title("📊 Sales Analytics")
     
@@ -105,9 +101,7 @@ elif page == "Sales Analytics":
     fig = px.bar(top_products, x='Quantity', y=top_products.index, orientation='h', color_discrete_sequence=['#FBBA13'])
     st.plotly_chart(fig, use_container_width=True)
 
-# -------------------------------------------------
 # CUSTOMER HUB
-# -------------------------------------------------
 elif page == "Customer Hub":
     st.title("👥 Customer Hub")
     
@@ -128,9 +122,7 @@ elif page == "Customer Hub":
         fig = px.pie(values=seg_dist.values, names=seg_dist.index, color_discrete_sequence=px.colors.sequential.Oranges)
         st.plotly_chart(fig, use_container_width=True)
 
-# -------------------------------------------------
 # DEMAND EXPLORER
-# -------------------------------------------------
 elif page == "Demand Explorer":
     st.title("📈 Demand Explorer")
     
@@ -149,9 +141,7 @@ elif page == "Demand Explorer":
     
     st.plotly_chart(fig, use_container_width=True)
 
-# -------------------------------------------------
 # CHURN RISK
-# -------------------------------------------------
 elif page == "Churn Risk":
     st.title("⚠️ Churn Risk Assessment")
     
@@ -173,9 +163,8 @@ elif page == "Churn Risk":
     st.subheader("Churn Probability Distribution")
     st.plotly_chart(fig, use_container_width=True)
 
-# -------------------------------------------------
+
 # INVENTORY HEALTH
-# -------------------------------------------------
 elif page == "Inventory Health":
     st.title("📦 Inventory Health & Optimization")
     
